@@ -5,6 +5,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js">
   </script>
   <script>
+
+//Using .text()
   function getHeadline() {
     $("h1").text();
     return $("h1").text();
@@ -26,8 +28,19 @@
 
     $("h1").text(head2);
     $("h2").text(head1);
-
   }
+
+//Showing and hiding elements
+  function noSubhed () {
+    $("h2").fadeOut();
+    $("h3").fadeOut();
+  }
+  function undo() {
+    $("h2").show();
+    $("h3").show();
+  }
+
+
 
   </script>
 </head>
